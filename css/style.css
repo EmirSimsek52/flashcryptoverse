@@ -27,7 +27,7 @@ a {
 }
 
 /* Navigation */
-.navbar {
+.navbar2 {
     position: fixed;
     top: 0;
     width: 100%;
@@ -82,6 +82,7 @@ a {
     padding: 0 3rem;
     background: linear-gradient(rgba(10, 10, 46, 0.9), rgba(10, 10, 46, 0.9)),
                 url('../images/hero-bg.jpg') center/cover;
+    margin-top: 0;
 }
 
 .hero-content {
@@ -122,6 +123,245 @@ a {
     transform: translateY(-3px);
 }
 
+/* Learn Section Styles */
+.learn-section {
+    padding: 120px 3rem 3rem;
+    min-height: 100vh;
+}
+
+.learn-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, var(--accent), var(--gradient-1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.learn-subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+.learn-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.learn-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.learn-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.learn-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.learn-content {
+    padding: 1.5rem;
+}
+
+.learn-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+
+.learn-content p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* NFT Gallery Styles */
+.nft-section {
+    padding: 120px 3rem 3rem;
+}
+
+.nft-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.nft-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.nft-card:hover {
+    transform: translateY(-10px);
+}
+
+.nft-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.nft-info {
+    padding: 1.5rem;
+}
+
+/* Contact Form Styles */
+.contact-section {
+    padding: 120px 3rem 3rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text);
+}
+
+.contact-info {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+/* Market Section Styles */
+.market-section {
+    padding: 120px 3rem 3rem;
+    min-height: 100vh;
+}
+
+.market-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    background: linear-gradient(45deg, var(--accent), var(--gradient-1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.market-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+/* Crypto Card styles */
+.crypto-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.crypto-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.crypto-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+.crypto-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.crypto-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--accent);
+}
+
+.price {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--accent);
+}
+
+.change {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.positive {
+    color: #00ff88;
+}
+
+.negative {
+    color: #ff4444;
+}
+
+.market-cap {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.glow {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: var(--gradient-1);
+    filter: blur(50px);
+    opacity: 0.15;
+    top: -25%;
+    left: -25%;
+    transition: 0.5s;
+}
+
+.crypto-card:hover .glow {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+}
+
 /* Crypto Ticker */
 .crypto-ticker {
     background: rgba(12, 12, 63, 0.95);
@@ -160,49 +400,6 @@ a {
 @keyframes ticker {
     0% { transform: translateX(100%); }
     100% { transform: translateX(-100%); }
-}
-
-/* Image Slider */
-.slider-section {
-    padding: 4rem 0;
-    background: rgba(12, 12, 63, 0.5);
-}
-
-.slider {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    padding: 2rem 0;
-}
-
-.slide-track {
-    display: flex;
-    width: calc(250px * 10);
-    animation: scroll 40s linear infinite;
-}
-
-.slide {
-    width: 250px;
-    height: 200px;
-    padding: 20px;
-    transition: transform 0.3s ease;
-}
-
-.slide:hover {
-    transform: scale(1.05);
-}
-
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-@keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-250px * 5)); }
 }
 
 /* Footer */
@@ -261,7 +458,7 @@ a {
 
 /* Responsive düzenlemeler */
 @media (max-width: 768px) {
-    .navbar {
+    .navbar2 {
         padding: 1rem;
     }
 
@@ -288,10 +485,79 @@ a {
         font-size: 1rem;
     }
 
+    .market-section,
+    .learn-section,
+    .nft-section,
+    .contact-section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .market-grid,
+    .learn-grid,
+    .nft-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .crypto-card {
+        padding: 1.5rem;
+    }
+
     .crypto-item {
         padding: 0.5rem !important;
     }
+}
 
+/* Image Slider */
+.slider-section {
+    padding: 4rem 0;
+    background: rgba(12, 12, 63, 0.5);
+}
+
+.slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.slide-track {
+    display: flex;
+    width: calc(250px * 10);
+    animation: scroll 40s linear infinite;
+}
+
+.slide {
+    width: 250px;
+    height: 200px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.slide:hover {
+    transform: scale(1.05);
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-250px * 5)); }
+}
+
+/* Responsive düzenlemeler */
+@media (max-width: 768px) {
     .slide {
         width: 200px;
         height: 160px;
