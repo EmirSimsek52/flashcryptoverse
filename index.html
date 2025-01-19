@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flash CryptoVerse - Your Gateway to Digital Assets</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar2">
         <div class="nav-content">
             <a href="index.html" class="logo">Flash CryptoVerse</a>
             <ul class="nav-links">
@@ -27,59 +29,60 @@
         <div class="hero-content">
             <h1>Finansın Geleceğine Hoş Geldiniz: Kripto Para Dünyasını Keşfedin</h1>
             <p>Kripto para, NFT ve blok zinciri teknolojisi dünyasında güvenilir rehberiniz. En güncel piyasa analizleri, detaylı eğitim içerikleri ve yenilikçi yatırım fırsatları ile dijital varlık dünyasına adım atın.</p>
-            <a  class="btn btn-primary" href="pages/market.html">Başlayın</a>
+            <a class="btn btn-primary" href="pages/market.html">Başlayın</a>
         </div>
     </section>
 
+    <!-- Crypto Price Ticker -->
+    <div class="crypto-ticker py-3">
+        <div class="container">
+            <div id="cryptoPrices" class="ticker-wrap d-flex justify-content-start align-items-center">
+                <!-- JavaScript will populate this -->
+            </div>
+        </div>
+    </div>
+
     <!-- Image Slider Section -->
     <section class="slider-section">
-        <div class="slider">
-            <div class="slide-track">
-                <div class="slide">
-                    <img src="images/hero/hero1.webp" alt="Cryptocurrency 1">
-                </div>
-                <div class="slide">
-                    <img src="images/hero/hero2.jpg" alt="Cryptocurrency 2">
-                </div>
-                <div class="slide">
-                    <img src="images/hero/hero3.webp" alt="Cryptocurrency 3">
-                </div>
-                <div class="slide">
-                    <img src="images/hero/hero4.jpg" alt="Cryptocurrency 4">
-                </div>
-                <div class="slide">
-                    <img src="images/hero/hero5.png" alt="Cryptocurrency 5">
+        <div class="container">
+            <div id="imageSlider" class="slider">
+                <div class="slide-track">
+                    <!-- JavaScript will populate this -->
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-<footer class="footer">
-    <div class="footer-content">
-        <div class="footer-section">
-            <h3>Flash CryptoVerse</h3>
-            <p>Kripto para dünyasında güvenilir rehberiniz. En güncel piyasa analizleri ve detaylı eğitim içerikleri.</p>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Flash CryptoVerse</h3>
+                <p>Kripto para dünyasında güvenilir rehberiniz. En güncel piyasa analizleri ve detaylı eğitim içerikleri.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hızlı Bağlantılar</h3>
+                <a href="index.html">Ana Sayfa</a>
+                <a href="pages/market.html">Piyasa</a>
+                <a href="pages/learn.html">Öğren</a>
+                <a href="pages/nft.html">NFT</a>
+                <a href="pages/contact.html">İletişim</a>
+            </div>
+            <div class="footer-section">
+                <h3>İletişim</h3>
+                <p>Email: muhammedemirsimsek@stu.topkapi.edu.tr</p>
+                <p>Telefon: +90 532 276 91 75</p>
+                <p>Adres: Digital City, DC 12345</p>
+            </div>
         </div>
-        <div class="footer-section">
-            <h3>Hızlı Bağlantılar</h3>
-            <a href="index.html">Ana Sayfa</a>
-            <a href="pages/market.html">Piyasa</a>
-            <a href="pages/learn.html">Öğren</a>
-            <a href="pages/nft.html">NFT</a>
-            <a href="pages/contact.html">İletişim</a>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Flash CryptoVerse. Tüm hakları saklıdır.</p>
         </div>
-        <div class="footer-section">
-            <h3>İletişim</h3>
-            <p>Email: muhammedemirsimsek@stu.topkapi.edu.tr</p>
-            <p>Telefon: +90 532 276 91 75</p>
-            <p>Adres: Digital City, DC 12345</p>
-        </div>
-    
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2024 Flash CryptoVerse. Tüm hakları saklıdır.</p>
-    </div>
-</footer>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
 </body>
 </html> 
