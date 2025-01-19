@@ -528,8 +528,8 @@ a {
 
 .slide-track {
     display: flex;
-    width: calc(250px * 10);
-    animation: scroll 40s linear infinite;
+    width: fit-content;
+    animation: scroll 20s linear infinite;
 }
 
 .slide {
@@ -561,6 +561,12 @@ a {
     .slide {
         width: 200px;
         height: 160px;
+        padding: 10px;
+    }
+    
+    @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-200px * 5)); }
     }
 }
 

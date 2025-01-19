@@ -98,8 +98,8 @@ function initImageSlider() {
     slideTrack.removeChild(slideTrack.firstChild);
   }
 
-  // Resimleri iki kez ekle (sonsuz döngü için)
-  [...images, ...images].forEach((img) => {
+  // Resimleri ekle
+  images.forEach((img) => {
     const slide = document.createElement("div");
     slide.className = "slide";
 
@@ -108,10 +108,14 @@ function initImageSlider() {
     image.alt = img.alt;
     image.className = "img-fluid rounded shadow";
 
-    // Resim yüklendikten sonra slide'ı ekle
-    image.onload = () => {
-      slide.appendChild(image);
-      slideTrack.appendChild(slide);
-    };
+    slide.appendChild(image);
+    slideTrack.appendChild(slide);
   });
+
+  // Sonsuz döngü için son resmi başa, ilk resmi sona klonla
+  const firstSlideClone = slideTrack.firstElementChild.cloneNode(true);
+  const lastSlideClone = slideTrack.lastElementChild.cloneNode(true);
+
+  slideTrack.appendChild(firstSlideClone);
+  slideTrack.insertBefore(lastSlideClone, slideTrack.firstElementChild);
 }
